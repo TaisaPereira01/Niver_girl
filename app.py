@@ -109,19 +109,36 @@ st.markdown(
         border-radius: 8px;
     }
 
-    .stButton > button {
-        background: #8d5d5f;
-        border-radius: 8px;
-        color: #fffaf7;
-        font-weight: 700;
+    .stButton > button,
+    [data-testid="stFormSubmitButton"] button {
+        background-color: #8d5d5f !important;
+        border: 1px solid #8d5d5f !important;
+        border-radius: 8px !important;
+        color: #fffaf7 !important;
+        font-weight: 700 !important;
+        min-height: 3rem;
         width: 100%;
     }
 
+    .stButton > button *,
+    [data-testid="stFormSubmitButton"] button * {
+        color: #fffaf7 !important;
+    }
+
     .stButton > button:hover,
-    .stButton > button:focus {
-        background: #774c4f;
-        color: #ffffff;
-        border-color: #774c4f;
+    .stButton > button:focus,
+    [data-testid="stFormSubmitButton"] button:hover,
+    [data-testid="stFormSubmitButton"] button:focus {
+        background-color: #6f4448 !important;
+        border-color: #6f4448 !important;
+        color: #ffffff !important;
+    }
+
+    .stButton > button:hover *,
+    .stButton > button:focus *,
+    [data-testid="stFormSubmitButton"] button:hover *,
+    [data-testid="stFormSubmitButton"] button:focus * {
+        color: #ffffff !important;
     }
     </style>
     """,
