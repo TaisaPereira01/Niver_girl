@@ -110,9 +110,18 @@ st.markdown(
     }
 
     .stButton > button {
+        background: #8d5d5f;
         border-radius: 8px;
+        color: #fffaf7;
         font-weight: 700;
         width: 100%;
+    }
+
+    .stButton > button:hover,
+    .stButton > button:focus {
+        background: #774c4f;
+        color: #ffffff;
+        border-color: #774c4f;
     }
     </style>
     """,
